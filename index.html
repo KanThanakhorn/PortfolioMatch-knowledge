@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="คลังคำถามและคำตอบของโปรเจกต์ PortfolioMatch" />
+    <title>PortfolioMatch / คลังคำถามทีม</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="knowledge-base">
+      <header class="site-header">
+        <div><span class="brand-mark">✦</span><span class="brand-name">PortfolioMatch</span></div>
+        <span class="header-note">TEAM KNOWLEDGE BASE</span>
+      </header>
+
+      <section class="search-area" aria-labelledby="page-title">
+        <p class="eyebrow">ค้นหาคำตอบของโปรเจกต์</p>
+        <h1 id="page-title">ไม่แน่ใจเรื่องไหน<br />ค้นหาจากที่นี่</h1>
+        <p class="intro">รวมคำถามที่ทีมอาจสงสัยเกี่ยวกับ PortfolioMatch ตั้งแต่แนวคิด ฟีเจอร์ โค้ด Architecture ไปจนถึงการนำเสนอ</p>
+        <form class="search-form" id="search-form" role="search">
+          <span class="search-icon">⌕</span>
+          <input id="search-input" type="search" autocomplete="off" placeholder="เช่น เป้าหมายคืออะไร, มีกี่หน้า, AI ทำงานอย่างไร..." aria-label="ค้นหาคำถาม" />
+          <button id="clear-search" type="button" aria-label="ล้างคำค้นหา">×</button>
+          <button class="search-submit" type="submit">ค้นหา</button>
+        </form>
+        <div class="search-help"><span>กด / เพื่อเริ่มค้นหา</span><span>ค้นหาได้ทั้งภาษาไทยและอังกฤษ</span></div>
+      </section>
+
+      <section class="question-area" aria-label="หมวดคำถาม">
+        <div class="category-bar" id="category-bar"><button class="category active" data-category="all">คำถามทั้งหมด <b>36</b></button><button class="category" data-category="overview">ภาพรวมโปรเจกต์ <b>6</b></button><button class="category" data-category="product">ระบบและฟีเจอร์ <b>7</b></button><button class="category" data-category="technical">โค้ดและ Architecture <b>6</b></button><button class="category" data-category="ai">AI ข้อมูล และข้อจำกัด <b>4</b></button><button class="category" data-category="team">ทีมและการแบ่งงาน <b>4</b></button><button class="category" data-category="presentation">รายงานและการนำเสนอ <b>9</b></button></div>
+        <div class="question-meta"><span id="result-count">36 คำถาม</span><button id="expand-all" type="button">เปิดทั้งหมด</button></div>
+        <div class="question-list" id="question-list"></div>
+        <div class="empty-state" id="empty-state" hidden><strong>ไม่พบคำถามที่ตรงกัน</strong><p>ลองใช้คำที่สั้นลง เช่น เป้าหมาย, หน้า, AI, โค้ด, นัท หรือ Demo</p></div>
+      </section>
+
+      <footer class="site-footer"><span>PortfolioMatch / Team knowledge base</span><span>ถ้ามีคำถามใหม่ ให้เพิ่มลงในหมวดที่เกี่ยวข้อง</span></footer>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
