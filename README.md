@@ -30,6 +30,7 @@ python3 -m http.server 4173
 
 - `downloads/portfolio-report-kit.zip` — รวมภาพหน้าจอ 5 ภาพ, แผนภาพ SVG 3 ภาพ, ร่างรายงาน, แหล่งอ้างอิง และ manifest
 - `downloads/report-draft.md` — เนื้อหาร่างสำหรับนัทนำไปแก้เป็นรายงาน
+- `downloads/nut-pdf-corrections.md` — จุดแก้พร้อมเลขหน้าในรายงานและสไลด์ของนัท
 - `assets/` — ไฟล์ภาพแยกสำหรับสไลด์
 
-ภาพหน้าจอถ่ายจาก PortfolioMatch production build บน branch `kan/backend` ณ 31 ตุลาคม 2569 ด้วยข้อมูล mock เริ่มต้น. เนื้อหาแยกสิ่งที่ระบบทำได้จริงออกจากข้อเสนอพัฒนาในอนาคต.
+ภาพหน้าจอชุดเดิมถ่ายจาก production build ณ 31 ตุลาคม 2569 ด้วยข้อมูล mock เริ่มต้น จึงยังไม่แสดงผล Gemini. ข้อมูลและแผนภาพอัปเดต ณ 1 พฤศจิกายน 2569. อ่าน `downloads/nut-pdf-corrections.md` ก่อนแก้รายงานและสไลด์ฉบับปัจจุบัน.
